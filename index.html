@@ -274,11 +274,16 @@
             clearInterval(timer);
            songStr+=data[index].ar[j].name+'  ';
 
+            singer.innerHTML=data[index].name+'---'+songStr;
+            // 切换列表选中项
+
+            for(var j = 0 ; j<data.length;j++){
+                lis[j].className = '';
+            }
+            lis[index].className = 'active';
         }
 
-       singer.innerHTML=data[index].name+'---'+songStr;
-        lis[index].className = 'active';
-        // 切换列表选中项
+
 
     }
 

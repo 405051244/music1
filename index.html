@@ -290,6 +290,7 @@
 
     function play(){
         pic.src= data[index].al.picUrl;
+        audio.src='http://music.163.com/song/media/outer/url?id='+data[index].id+'.mp3';
         audio.play();
         // 播放按钮变成暂停
         star.style.backgroundPositionX=-30+'px';

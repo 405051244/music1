@@ -258,7 +258,7 @@
 
         $('ul').on('click','li',function () {
         index=$ (this).index();
-        audio.src='http://music.163.com/song/media/outer/url?id='+data[index].id+'.mp3';
+        audio.src='http://ws.stream.qqmusic.qq.com/url=?+uid'+data[index].id+'.mp3';
         init();
         play();
     })

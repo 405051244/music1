@@ -209,7 +209,7 @@
         // 搜索音乐
         // AJAX请求
         $.ajax({
-                url:'https://api.apiopen.top/searchMusic?',
+                url:'https://api.apiopen.top/searchMusic',
                 data:{
                     type:'search',
                     s:searchTxt.value
@@ -258,7 +258,7 @@
 
         $('ul').on('click','li',function () {
         index=$ (this).index();
-        audio.src='http://music.163.com/song/media/outer/url?id='+data[index].id+'.mp3';
+        audio.src='http://p1.music.126.net/'+data[index].id+'.mp3';
         init();
         play();
     })
